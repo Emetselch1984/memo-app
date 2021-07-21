@@ -1,4 +1,4 @@
 class Memo < ApplicationRecord
-  validate :title ,presence: true,length: { maximum: 250 }
-  validate :discription ,presence: true,length: { maximum: 5000 }
+  validates :title ,presence: true,length: { maximum: 250 }
+  validates :discription ,presence: true,length: { maximum: 5000 }
 end
